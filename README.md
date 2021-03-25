@@ -78,4 +78,5 @@ For almost 2600 ramens, more than half can be purchased as a package. The cup an
 
 We see that that in our data there is a company which makes the most of the product,' Nissin' dominates our sample population of products having more than 350 different products in the dataset we see that if we look at the next 2 leading companies, they are fairly close to each other in the number of products they sale. As we go down our list, we see that the number of products decreases in a fairly balanced slope, meaning except 'Nissin,' which dominates all the other companies, does not have as sharp a difference compared to 'Nissan.'
 # 5. Bibliography
+Dataset available: https://www.kaggle.com/residentmario/ramen-ratings
 
