@@ -1,0 +1,235 @@
+---
+title: "Ramen-ratings"
+author: "Yuantai Huang"
+date: "2021/3/24"
+output:
+  html_document:
+    code_folding: hide
+    # number_sections: true
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# 1.Introduction:
+
+
+Ramen is without arguing a popular 'fast food' not only in Japan but in many western countries as well but what differs between the many brands available what makes a certain type of ramen better than others, what features have the largest effect on the rating of the product, is it the company that produces the ramen? 
+
+
+Thus we list 4 questions for when we exploring the dataset clearly:
+
+
+* 1.What is the most popular kind of ramen noodles?
+
+
+* 2.What are the top 3 countries which have high average ramen ratings?
+
+
+* 3.Do the styles of ramen noodles have any impact on the ratings? 
+
+
+* 4.Do countries have a big impact on the ratings?
+
+
+
+Based on above questions, we would like to apply hypothesis testing and simple linear 
+regression model to answer these questions.
+
+
+Data describing Ramen and opinions about it can be found on a website dedicated to this issue - theramenrater.com. We have information about almost 2600 ready-made ramen, which we can buy in various places around the world. Today we'll look at these dishes depending on the continent they come from. The variable about the continent cannot be found in the database, but it can be created based on information about the country of origin, which we group into continents.  
+
+
+This dataset contains ramen ratings from The Ramen Rater website.
+
+
+a.Source: Kaggle
+
+
+⬩ 2580 Observations and five variables
+
+
+⬩ [1] "Brand" "Variety" "Style" "Country" "Stars"
+
+
+
+* `Brand`: brand for ramen
+
+
+* `Variety`: ramen specificed variety
+
+
+* `Style`: the style of ramen as pack, bowl, tray, box, cup and etc.
+
+
+* `Country`: the source country of ramen
+
+
+* `Stars`: stars of ratings given to ramen
+
+
+
+```{r}
+library(ggplot2)
+library(ggridges)
+library(ggthemes)
+library(scales)
+library(grid)
+library(gridExtra)
+library(dplyr)
+library(gtable)
+library(scales)
+
+ramen <- read.csv("ramen-ratings.csv")
+print(ramen[is.na(ramen)]) #Check if there are any null values in the dataset
+head(ramen)
+str(ramen)
+ramen <- ramen[c(-1,-7)]
+ramen$Stars <- as.numeric(ramen$Stars)
+str(ramen)
+ramen$Stars <- as.numeric(as.character(ramen$Stars))
+ramen
+
+```
+# 2.EDA(Exploratory Data Analysis):
+
+
+To Prepare for EDA:
+
+
+Dropped 2 variables: Review and Top ten 
+
+
+(practically no obserǿations in top ten Were recorded and review were labels)
+
+
+● Turn the variables of Stars into numeric.
+
+
+● Graphs used: 
+
+
+○ Heatmap
+
+
+○ Barplots
+
+
+```{r}
+ramen$Stars <- as.numeric(ramen$Stars)
+
+```
+# Top 10 Average Ramen ratings by countries
+
+
+From the barplot, we can see the top 10 ramen ratings by 
+
+
+different countries, Ȁhich the top rating is Brazil, and the 
+
+
+average rating is 4.35. 
+
+
+```{r}
+country_groups<-group_by(ramen,Country)
+ramen_country <- summarise(country_groups, Stars_mean = mean(Stars))
+ramen_country10 <- arrange(ramen_country, -Stars_mean)[1:10,]
+ramen_country10
+ggplot(ramen_country10,aes(x=Country,y=Stars_mean))+geom_bar(stat="identity",width=0.3,col = "blue") + labs(x="Stars", y="Country", fill="Group") +
+theme_bw()+ coord_flip()
+```
+# Average Ramen ratings by Styles
+
+
+From the barplot and the chart, we can see there are total of 7 styles of ramen noodles in this research, and there are some unknown, which we will eliminate those during our analysis. The one that most popular is Bar, which has 5 stars rating. 
+
+```{r}
+style_groups<-group_by(ramen,Style)
+ramen_style <- summarise(style_groups, Stars_mean = mean(Stars))
+ggplot(ramen_style,aes(x=Style,y=Stars_mean))+geom_bar(stat="identity",width=0.3,col = "blue") + labs(x="Stars", y="Style", fill="Group") +
+theme_bw() + coord_flip()
+```
+
+
+# 3.Regression Analysis: 
+
+
+
+# First modeling build:
+
+
+The country Brazil, Cambodia, Canada, Hong Kong, Indonesia, Japan, Malaysia, Mexico, Myanmar, NetherlandsBaraȀak, Singapore, South Korea, and TaiȀan are significant. 
+The oǿerall model is significant.
+
+```{r}
+ramenlm<-lm(Stars~Country,data=ramen)
+summary(ramenlm)
+confint(ramenlm)
+summary(aov(ramenlm))
+```
+# Second modeling build:
+
+
+None of the style is significant Ȁhich means people do not have a preference to style. Style is not an important factor for people to give rate for ramen.
+
+
+```{r}
+ramenlm2<-lm(Stars~Style,data=ramen)
+summary(ramenlm2)
+confint(ramenlm2)
+summary(aov(ramenlm2))
+```
+
+# 4. Conclusion
+
+
+1. What is the most popular kind of ramen noodles?
+
+
+“Bar” has the highest rating -- 5 stars, since many people still prefer to dine in 
+at the restaurant. 
+
+
+2. What are the top 3 countries which have a high average ramen ratings?
+
+
+“Brazil”, “Cambodia” and “Fiji”
+
+
+
+3. Do the styles of ramen noodles have any impact to the ratings?
+
+
+
+Overall, styles have some impact to the ratings. (P-value is small)
+
+
+
+4. Do countries have a big impact on the ratings?
+
+
+
+Overall, countries have some impact to the ratings. (P-value is small)
+
+
+
+It can be concluded that the ramen ratings issued by users are indeed different due to the continent. The best grades are given in Asia, but reviewers from South America are also willingly giving high marks. Strongly negative ratings are most frequent in Europe and North America, but on average the lowest ratings are given in Australia.
+
+
+For almost 2600 ramens, more than half can be purchased as a package. The cup and bowl are also common types. When it comes to continents, about 75% of the products of this dish come from Asia - the continent from which it comes. The differences between the continents in the type of packaging are small - the most noticeable is the fact that bowl packaging is available practically only in Asian ramen.
+
+
+We see that that in our data there is a company which makes the most of the product,' Nissin' dominates our sample population of products having more than 350 different products in the dataset we see that if we look at the next 2 leading companies, they are fairly close to each other in the number of products they sale. As we go down our list, we see that the number of products decreases in a fairly balanced slope, meaning except 'Nissin,' which dominates all the other companies, does not have as sharp a difference compared to 'Nissan.'
+
+# 5.Bibliography:
+
+
+Dataset available: https://www.kaggle.com/residentmario/ramen-ratings
+
+
+# Thanks for reading our short kernal!
