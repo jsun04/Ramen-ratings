@@ -1,4 +1,7 @@
-# Ramen-ratings
+# Ramen-ratings paper
+#Introduction
+
+This paper will
 # Clean data
 setwd("/Users/sunemilyjiayin/Creative Cloud Files")
 ramen <- read.csv("ramen-ratings.csv")
