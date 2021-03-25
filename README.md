@@ -38,19 +38,8 @@ Data describing Ramen and opinions about it can be found on a website dedicated 
 # 2.Exploritory Data Analysis
 
 # 3. Regression Analysis
-```
-ramenlm<-lm(Stars~Country,data=ramen)
-summary(ramenlm)
-confint(ramenlm)
-summary(aov(ramenlm))
-```
 
-```
-ramenlm2<-lm(Stars~Style,data=ramen)
-summary(ramenlm2)
-confint(ramenlm2)
-summary(aov(ramenlm2))
-```
+
 
 # 4. Conclusion
 1. What is the most popular kind of ramen noodles?
