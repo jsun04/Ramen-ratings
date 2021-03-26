@@ -42,43 +42,10 @@ Data describing Ramen and opinions about it can be found on a website dedicated 
 
 
 # 4. Conclusion
-1. What is the most popular kind of ramen noodles?
 
+Overall, styles have some impact to the ratings because the p value is small. The most popular kind of ramen noodles are bar, because many people still prefer to dine in at the restaurant. In general, countries also have some impact to the ratings due to small p values and the top 3 countries which have a high average ramen ratings are “Brazil”, “Cambodia” and “Fiji”. Ramen ratings issued by users are indeed different due to the continent. The best grades are given in Asia, but reviewers from South America also willingly to give high marks. Strongly negative ratings are frequently appear in Europe and North America. On average, reviewers from Australia gave the lowest ratings. Out of 2580 ramens, more than half can be purchased as a package. The cup and bowl are also popular, too. When it comes to continents, about 75% of the products come from Asia, and Asia was also the continent produces ramens. The differences between the continents and styles are small. Particularly, bowl packaging only observed in Asian ramen. We see that that in our data, the company ' Nissin' dominates in our sample with more than 350 different products in our dataset.
 
-“Bar” has the highest rating -- 5 stars, since many people still prefer to dine in 
-at the restaurant. 
-
-
-2. What are the top 3 countries which have a high average ramen ratings?
-
-
-“Brazil”, “Cambodia” and “Fiji”
-
-
-
-3. Do the styles of ramen noodles have any impact to the ratings?
-
-
-
-Overall, styles have some impact to the ratings. (P-value is small)
-
-
-
-4. Do countries have a big impact on the ratings?
-
-
-
-Overall, countries have some impact to the ratings. (P-value is small)
-
-
-
-It can be concluded that the ramen ratings issued by users are indeed different due to the continent. The best grades are given in Asia, but reviewers from South America are also willingly giving high marks. Strongly negative ratings are most frequent in Europe and North America, but on average the lowest ratings are given in Australia.
-
-
-For almost 2600 ramens, more than half can be purchased as a package. The cup and bowl are also common types. When it comes to continents, about 75% of the products of this dish come from Asia - the continent from which it comes. The differences between the continents in the type of packaging are small - the most noticeable is the fact that bowl packaging is available practically only in Asian ramen.
-
-
-We see that that in our data there is a company which makes the most of the product,' Nissin' dominates our sample population of products having more than 350 different products in the dataset we see that if we look at the next 2 leading companies, they are fairly close to each other in the number of products they sale. As we go down our list, we see that the number of products decreases in a fairly balanced slope, meaning except 'Nissin,' which dominates all the other companies, does not have as sharp a difference compared to 'Nissan.'
 # 5. Bibliography
-Dataset available: https://www.kaggle.com/residentmario/ramen-ratings
 
+Dataset available: https://www.kaggle.com/residentmario/ramen-ratings
+The Ramen Rater: https://www.theramenrater.com
