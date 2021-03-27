@@ -37,6 +37,8 @@ Data describing Ramen and opinions about it can be found on a website dedicated 
 
 # 2.Exploritory Data Analysis
 
+Before the data analysis, we dropped 2 variables: Review and Top ten, because no observation in top ten were recorded and review were lables.
+
 # 3. Regression Analysis
 
 
