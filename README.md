@@ -52,4 +52,5 @@ Overall, styles have some impact to the ratings because the p value is small. Th
 # 5. Bibliography
 
 Dataset available: https://www.kaggle.com/residentmario/ramen-ratings
+
 The Ramen Rater: https://www.theramenrater.com
