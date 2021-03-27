@@ -44,7 +44,10 @@ str(ramen)
 ```
 
 ```{r}
-summary(ramen)
+head(ramen)
+mean(ramen$Stars)
+sd(ramen$Stars)
+colnames(ramen)
 ```
 
 
@@ -76,16 +79,7 @@ confint(ramenlm3)
 summary(aov(ramenlm3))
 ```
 
-```{r}
-ramenlm<-lm(Stars~Country,data=ramen)
-summary(ramenlm3)
-confint(ramenlm3)
-summary(aov(ramenlm3))
-```
 
-```{r}
-
-```
 
 `
 
