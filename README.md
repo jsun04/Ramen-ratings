@@ -28,8 +28,9 @@ Data describing Ramen and opinions about it can be found on a website dedicated 
 
 # 2.Exploritory Data Analysis
 
-Before the data analysis, we dropped 2 variables: Review and Top ten, because no observation in top ten were recorded and review were lables. And then we turned the variables of Stars into numeric. Heatmap and barplots are used to make exploritory data analysis. From the barplot of top 10 average Ramen ratings by countries, we can see the top rating is Brazil, and the average rating is 4.35. From the barplot and the chart of ratings by styles, we can see there are total of 7 styles of ramen noodles in this research, and there are some unknown, which we will eliminate those during our analysis. The one that most popular is bar, which has 5 stars rating.
-
+Before getting into the deep analysis about this dataset, we first cleaned the dataset by dropping 2 variables: Review and Top ten, because there is no data contains in top ten and review were random lables, which is meaningless for our analysis. 
+And then we turned the variables of `Stars` into numeric variables. We want to use Heatmap and Barplots to make exploritory data analysis (EDA). 
+From the barplot of the top 10 average Ramen ratings by countries, we can see the top rating is Brazil, which has an average rating 4.35. From the barplot and the chart of ratings by styles, we can see there are total of 7 styles of ramen noodles in this research, and there are some unknown, which we will eliminate those during our analysis. The one that most popular is `bar`, which has 5 stars rating. This result is not supring for us, because from the research we know many Asian people still love to eat ramen in a physical resterant, and some of them may feel the taste is better comparing to eat ramen at home. In addition, many Japanese people are very serious about the cooking time for ramen, someone likes to eat harder ramen so they often cook for 2 minitues, but some likes to eat softer ramen and they always cook it for 3-4 minitues. This kind of complicated process may not be done by ourselves at home, but the ramen shop can do all of those. Therefore, the `bar` has the highest rating. 
 
 # 3. Regression Analysis
 
