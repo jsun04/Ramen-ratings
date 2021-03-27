@@ -1,6 +1,6 @@
 ---
-title: "Untitled"
-author: "Jiayin Sun"
+title: "Team 5 Group project"
+author: "Jiayin Sun, Xiaotang Tang, Congyuan Xu, Yuantai Huang"
 date: "3/18/2021"
 output: html_document
 ---
