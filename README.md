@@ -41,7 +41,8 @@ Before the data analysis, we dropped 2 variables: Review and Top ten, because no
 
 
 # 3. Regression Analysis
-
+Firstly, we see that the country Brazil, Cambodia, Canada, Hong Kong, Indonesia, Japan, Malaysia, Mexico, Myanmar, NetherlandsBaraȀak, Singapore, South Korea, and Taiwan are significant. The overall model is significant.
+Secondly, we found that none of the style is significant Ȁhich means people do not have a preference to style. Style is not an important factor for people to give rate for ramen.
 
 
 # 4. Conclusion
