@@ -1,7 +1,25 @@
 # Ramen-ratings paper
 # 1.Introduction
 
-Without arguement, ramen is a popular 'convinent food' not only in Asian countries but in many western countries as well. For this project, our team wants to have a deeper understanding of the ramen ratings from different countries and brands. The data set was found in Kaggle, which contain the data from Ramen Rater Website. This dataset contains 2580 Observations with five variables: 
+This paper will discuss on Ramen ratings from The Ramen Rater website from Kaggle. Ramen is without arguing a popular 'fast food' not only in Japan but in many western countries as well but what differs between the many brands available what makes a certain type of ramen better than others, what features have the largest effect on the rating of the product, is it the company that produces the ramen? 
+
+Thus we list 4 questions for when we exploring the dataset clearly:
+* 1.What is the most popular kind of ramen noodles?
+* 2.What are the top 3 countries which have high average ramen ratings?
+* 3.Do the styles of ramen noodles have any impact on the ratings? 
+* 4.Do countries have a big impact on the ratings?
+
+Based on above questions, we would like to apply hypothesis testing and simple linear 
+regression model to answer these questions.
+
+Data describing Ramen and opinions about it can be found on a website dedicated to this issue - theramenrater.com. We have information about almost 2600 ready-made ramen, which we can buy in various places around the world. Today we'll look at these dishes depending on the continent they come from. The variable about the continent cannot be found in the database, but it can be created based on information about the country of origin, which we group into continents.  
+
+⬩ 2580 Observations and five variables
+
+
+⬩ [1] "Brand" "Variety" "Style" "Country" "Stars"
+
+
 
 * `Brand`: brand for ramen
 
@@ -17,20 +35,10 @@ Without arguement, ramen is a popular 'convinent food' not only in Asian countri
 
 * `Stars`: stars of ratings given to ramen
 
-Our team will focus on the following questions:
-
-* 1.What is the most popular kind of ramen noodles?
-* 2.What are the top 3 countries which have high average ramen ratings?
-* 3.Do the styles of ramen noodles have any impact on the ratings? 
-* 4.Do countries have a big impact on the ratings?
-
-Based on above questions, we would like to apply hypothesis testing and simple linear regression models to answer these questions.
-
-Data describing Ramen and opinions about it can be found on a website dedicated to this issue - theramenrater.com. We have information about almost 2600 ready-made ramen, which we can buy in various places around the world. Today we'll look at these dishes depending on the continent they come from. The variable about the continent cannot be found in the database, but it can be created based on information about the country of origin, which we group into continents.  
-
 # 2.Exploritory Data Analysis
 
-Before the data analysis, we dropped 2 variables: Review and Top ten, because no observation in top ten were recorded and review were lables.
+Before the data analysis, we dropped 2 variables: Review and Top ten, because no observation in top ten were recorded and review were lables. And then we turned the variables of Stars into numeric. Headmap and barplots are used to make exploritory data analysis. From the barplot of top 10 average Ramen ratings by countries, we can see the top rating is Brazil, and the average rating is 4.35. From the barplot and the chart of ratings by styles, we can see there are total of 7 styles of ramen noodles in this research, and there are some unknown, which we will eliminate those during our analysis. The one that most popular is Bar, which has 5 stars rating.
+
 
 # 3. Regression Analysis
 
