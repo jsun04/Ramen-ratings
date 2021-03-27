@@ -37,10 +37,11 @@ Data describing Ramen and opinions about it can be found on a website dedicated 
 
 # 2.Exploritory Data Analysis
 
-Before the data analysis, we dropped 2 variables: Review and Top ten, because no observation in top ten were recorded and review were lables. And then we turned the variables of Stars into numeric. Headmap and barplots are used to make exploritory data analysis. From the barplot of top 10 average Ramen ratings by countries, we can see the top rating is Brazil, and the average rating is 4.35. From the barplot and the chart of ratings by styles, we can see there are total of 7 styles of ramen noodles in this research, and there are some unknown, which we will eliminate those during our analysis. The one that most popular is Bar, which has 5 stars rating.
+Before the data analysis, we dropped 2 variables: Review and Top ten, because no observation in top ten were recorded and review were lables. And then we turned the variables of Stars into numeric. Heatmap and barplots are used to make exploritory data analysis. From the barplot of top 10 average Ramen ratings by countries, we can see the top rating is Brazil, and the average rating is 4.35. From the barplot and the chart of ratings by styles, we can see there are total of 7 styles of ramen noodles in this research, and there are some unknown, which we will eliminate those during our analysis. The one that most popular is bar, which has 5 stars rating.
 
 
 # 3. Regression Analysis
+
 Firstly, we see that the country Brazil, Cambodia, Canada, Hong Kong, Indonesia, Japan, Malaysia, Mexico, Myanmar, NetherlandsBaraȀak, Singapore, South Korea, and Taiwan are significant. The overall model is significant.
 Secondly, we found that none of the style is significant Ȁhich means people do not have a preference to style. Style is not an important factor for people to give rate for ramen.
 
