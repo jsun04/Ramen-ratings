@@ -1,7 +1,7 @@
 # Ramen-ratings paper
 # 1.Introduction
 
-Without any arguments, Ramen is one of the most convinents food not only in Asian countries, but also in mant western countries as well. When we do not know what to eat, ramen is a good choice not only because it's tasty, but also it’s easy to cook. Especially, when instant noodles were invented by Momofuku Ando in 1958, ramen became quick and easy to cook only with boiled water. For this project, our team found an interesting dataset in Kaggle, which contains the data from Ramen Rater website. Data describing Ramen and opinions about it can be found on a website dedicated to this issue - theramenrater.com. This dataset contains 2580 variables with 5 varibales:
+Without any arguments, Ramen is one of the most convinents food not only in Asian countries, but also in mant western countries as well. When we do not know what to eat, ramen is a good choice not only because it's tasty, but also it’s easy to cook. Especially, when instant noodles were invented by Momofuku Ando in 1958, ramen became quick and easy to cook only with boiled water. For this project, our team found an interesting dataset on Kaggle, which contains the data from Ramen Rater website. Data describing Ramen and opinions about it can be found on a website dedicated to this issue - theramenrater.com. This dataset contains 2580 variables with 5 varibales:
 * `Brand`: brand for ramen
 
 
