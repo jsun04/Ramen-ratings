@@ -44,8 +44,23 @@ Secondly, we used barplot to show the top 10 average Ramen ratings by countries,
 
 # 3. Regression Analysis
 
-Since we only have one numeric variable which is stars aka ratings and others were characters. We can use linear regression when we only have one numeric variable. First, we would like to see if countries have a big impact on Firstly, we see that the country Brazil, Cambodia, Canada, Hong Kong, Indonesia, Japan, Malaysia, Mexico, Myanmar, NetherlandsBaraȀak, Singapore, South Korea, and Taiwan are significant. The overall model is significant.
-Secondly, we found that none of the style is significant Ȁhich means people do not have a preference to style. Style is not an important factor for people to give rate for ramen.
+Since we only have one numeric variable which is stars aka ratings and others were characters. We can use linear regression when we only have one numeric variable. First, we would like to see if countries have a big impact on the ratings. In order to achieve this result, we are going to perform a linear regression on stars(ratings) and countries.
+```
+ramenlm3<-lm(Stars~Country,data=ramen)
+summary(ramenlm3)
+confint(ramenlm3)
+summary(aov(ramenlm3))
+```
+According to our linear model, we see that the country Brazil, Cambodia, Canada, Hong Kong, Indonesia, Japan, Malaysia, Mexico, Myanmar, Netherlands, BaraȀak, Singapore, South Korea, and Taiwan are significant. The multiple R squared value is 0.1325, and the adjusted R squared value is 0.1198. The p value for anova table is quite small which indicates that the overall model is also significant.
+
+Secondly, we would like to see if styles of ramen noodles have any impact on ratings. Just like what we did for countries and stars, we are going to perform a linear regression on stars(ratings) and styles.
+```
+ramenlm2<-lm(Stars~Style,data=ramen)
+summary(ramenlm2)
+confint(ramenlm2)
+summary(aov(ramenlm2))
+```
+According to our linear model, we found that none of the style is significant. People do not have a preference to style. The multiple R squared value is 0.00754, and the adjusted R squared value is 0.004836. The p value for anova table is 0.00686. The style is an important factor overall, however, the specific style is not an important factor for people gave ratings on ramen noodles. Customers more care about how the noodle itself taste rather than if the noodle serve in the bar, in the bowl, in a box, in a can, in a cup, in a pack or on a tray.
 
 
 # 4. Conclusion
