@@ -1,7 +1,7 @@
 # Ramen-ratings paper
 # 1.Introduction
 
-Without any arguments, Ramen is one of the most convinents food not only in Asian countries, but also in mant western countries as well. When we do not know what to eat, ramen is a good choice not only because it's tasty, but also it’s easy to cook. Especially, when instant noodles were invented by Momofuku Ando in 1958, ramen became quick and easy to cook only with boiled water. For this project, our team found an interesting dataset in Kaggle, which contains the data from Ramen Rater website. This dataset contains 2580 variables with 5 varibales:
+Without any arguments, Ramen is one of the most convinents food not only in Asian countries, but also in mant western countries as well. When we do not know what to eat, ramen is a good choice not only because it's tasty, but also it’s easy to cook. Especially, when instant noodles were invented by Momofuku Ando in 1958, ramen became quick and easy to cook only with boiled water. For this project, our team found an interesting dataset in Kaggle, which contains the data from Ramen Rater website. Data describing Ramen and opinions about it can be found on a website dedicated to this issue - theramenrater.com. This dataset contains 2580 variables with 5 varibales:
 * `Brand`: brand for ramen
 
 
@@ -31,7 +31,6 @@ There are 3 main reasons that made our team decided to do this project:
 
 To get a better understanding of those SMART questions above, we would like to apply hypothesis tests and simple linear regression models to to accomplish this task.
 
-Data describing Ramen and opinions about it can be found on a website dedicated to this issue - theramenrater.com. We have information about almost 2600 ready-made ramen, which we can buy in various places around the world. Today we'll look at these dishes depending on the continents they come from. The variables about the continents cannot be found in the database, but it can be created based on information about the country of origin, which we group into continents.  
 
 # 2.Exploritory Data Analysis
 
