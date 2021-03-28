@@ -51,7 +51,7 @@ summary(ramenlm3)
 confint(ramenlm3)
 summary(aov(ramenlm3))
 ```
-According to our linear model, we see that the country Brazil, Cambodia, Canada, Hong Kong, Indonesia, Japan, Malaysia, Mexico, Myanmar, Netherlands, BaraȀak, Singapore, South Korea, and Taiwan are significant. The multiple R squared value is 0.1325, and the adjusted R squared value is 0.1198. The p value for anova table is quite small which indicates that the overall model is also significant.
+According to our linear model, we see that the country Brazil, Cambodia, Canada, Hong Kong, Indonesia, Japan, Malaysia, Mexico, Myanmar, Netherlands, BaraAak, Singapore, South Korea, and Taiwan are significant. The multiple R squared value is 0.1325, and the adjusted R squared value is 0.1198. The p value for anova table is quite small which indicates that the overall model is also significant.
 
 Secondly, we would like to see if styles of ramen noodles have any impact on ratings. Just like what we did for countries and stars, we are going to perform a linear regression on stars(ratings) and styles.
 ```
