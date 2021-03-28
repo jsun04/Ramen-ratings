@@ -29,7 +29,7 @@ There are 3 main reasons that made our team decided to do this project:
 3. It is also nice to know if different style of ramen can also affect the ratings. 
 
 
-To get a better understanding of those SMART questions above, we would like to apply hypothesis tests and simple linear regression models to to accomplish this task. As for the sofewares we used to accomplish this project, our team decided to use both RStudio and Tableau to do all the analysis. 
+To get a better understanding of those SMART questions above, we would like to apply hypothesis tests and simple linear regression models to to accomplish this task.
 
 
 # 2.Exploritory Data Analysis
@@ -38,13 +38,13 @@ Before getting into the deep analysis about this dataset, we first cleaned the d
 
 And then we turned the variables of `Stars` into numeric variables. We want to use Heatmap and Barplots to make exploritory data analysis (EDA). 
 
-First, our team looked at all the countries contain in this dataset by creating a heatmap. From the map, we can see that worldwidely, there are 37 countries have been covered for this research. And the color represents the ratings for each country, the darker the color is, the higher the rate is. Just by looking at the plot, we can see that China, and United States are the two countries with darker color. But we can make the conclusion for our question, because we still need futhur analysis to ensure our assumption. 
+First, our team looked at all the countries contain in this dataset by creating a heatmap. From the map, we can see that worldwidely, there are almost 50% of the countries have been covered for this research. And the color represents the ratings for each country, the darker the color is, the higher the rate is. Just by looking at the plot, we can see that China, and United States are the two countries with darker color. But we can make the conclusion for our question, because we still need futhur analysis to ensure our assumption. 
 
 Secondly, we used barplot to show the top 10 average Ramen ratings by countries, we can see the top rating is Brazil, which has an average rating 4.35. From the barplot and the chart of ratings by styles, we can see there are total of 7 styles of ramen noodles in this research, and there are some unknown, which we will eliminate those during our analysis. The one that most popular is `bar`, which has 5 stars rating. This result is not supring for us, because from the research we know many Asian people still love to eat ramen in a physical resterant, and some of them may feel the taste is better comparing to eat ramen at home. In addition, many Japanese people are very serious about the cooking time for ramen, someone likes to eat harder ramen so they often cook for 2 minitues, but some likes to eat softer ramen and they always cook it for 3-4 minitues. This kind of complicated process may not be done by ourselves at home, but the ramen shop can do all of those. Therefore, the `bar` has the highest rating. 
 
 # 3. Regression Analysis
 
-Firstly, we see that the country Brazil, Cambodia, Canada, Hong Kong, Indonesia, Japan, Malaysia, Mexico, Myanmar, NetherlandsBaraȀak, Singapore, South Korea, and Taiwan are significant. The overall model is significant.
+Since we only have one numeric variable which is stars aka ratings and others were characters. We can use linear regression when we only have one numeric variable. First, we would like to see if countries have a big impact on Firstly, we see that the country Brazil, Cambodia, Canada, Hong Kong, Indonesia, Japan, Malaysia, Mexico, Myanmar, NetherlandsBaraȀak, Singapore, South Korea, and Taiwan are significant. The overall model is significant.
 Secondly, we found that none of the style is significant Ȁhich means people do not have a preference to style. Style is not an important factor for people to give rate for ramen.
 
 
