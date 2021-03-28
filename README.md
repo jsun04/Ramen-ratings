@@ -29,7 +29,7 @@ There are 3 main reasons that made our team decided to do this project:
 3. It is also nice to know if different style of ramen can also affect the ratings. 
 
 
-To get a better understanding of those SMART questions above, we would like to apply hypothesis tests and simple linear regression models to to accomplish this task.
+To get a better understanding of those SMART questions above, we would like to apply hypothesis tests and simple linear regression models to to accomplish this task. As for the sofewares we used to accomplish this project, our team decided to use both RStudio and Tableau to do all the analysis. 
 
 
 # 2.Exploritory Data Analysis
