@@ -1,7 +1,7 @@
 # Ramen-ratings paper
 # 1.Introduction
 
-Without any arguments, Ramen is one of the most convinents food not only in Asian countries, but also in mant western countries as well. For this project, our team found an interesting dataset in Kaggle, which contains the data from Ramen Rater website. This dataset contains 2580 variables with 5 varibales:
+Without any arguments, Ramen is one of the most convinents food not only in Asian countries, but also in mant western countries as well. When we do not know what to eat, ramen is a good choice not only because it's tasty, but also it’s easy to cook. Especially, when instant noodles were invented by Momofuku Ando in 1958, ramen became quick and easy to cook only with boiled water. For this project, our team found an interesting dataset in Kaggle, which contains the data from Ramen Rater website. This dataset contains 2580 variables with 5 varibales:
 * `Brand`: brand for ramen
 
 
@@ -21,6 +21,13 @@ And our team wants to foucs on exploring these following questions:
 * 2.What are the top 3 countries which have high average ramen ratings?
 * 3.Do the styles of ramen noodles have any impact on the ratings? 
 * 4.Do countries have a big impact on the ratings?
+
+There are 3 main reasons that made our team decided to do this project:
+
+1. Our team only know Ramen from China and Japan, so we want to explore the Ramen industry all around the world. 
+2. We also want to know what are some factors that impact the ratings for different kinds of ramen. 
+3. It is also nice to know if different style of ramen can also affect the ratings. 
+
 
 To get a better understanding of those SMART questions above, we would like to apply hypothesis tests and simple linear regression models to to accomplish this task.
 
